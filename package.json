@@ -15,7 +15,7 @@
     "url": "https://github.com/SC5/mozaik-ext-sheets/issues"
   },
   "dependencies": {
-    "bluebird": "^2.9.14",
+    "bluebird": "2.9.22",
     "chalk": "^0.5.1",
     "d3": "^3.5.5",
     "jquery": "^2.1.3",

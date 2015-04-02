@@ -1,0 +1,1312 @@
+[
+  {
+    "row": "1",
+    "column": "A",
+    "content": "Alkaa"
+  },
+  {
+    "row": "1",
+    "column": "B",
+    "content": "Päättyy"
+  },
+  {
+    "row": "1",
+    "column": "C",
+    "content": "Tapahtuman nimi"
+  },
+  {
+    "row": "1",
+    "column": "D",
+    "content": "Kuvaus"
+  },
+  {
+    "row": "1",
+    "column": "E",
+    "content": "Järjestäjä"
+  },
+  {
+    "row": "1",
+    "column": "F",
+    "content": "HUOM!"
+  },
+  {
+    "row": "1",
+    "column": "G",
+    "content": "Koko"
+  },
+  {
+    "row": "1",
+    "column": "H",
+    "content": "Kohderyhmä"
+  },
+  {
+    "row": "1",
+    "column": "I",
+    "content": "Paikka"
+  },
+  {
+    "row": "1",
+    "column": "J",
+    "content": "Saitti"
+  },
+  {
+    "row": "2",
+    "column": "A",
+    "content": "Q1"
+  },
+  {
+    "row": "3",
+    "column": "A",
+    "content": "17.3."
+  },
+  {
+    "row": "3",
+    "column": "C",
+    "content": "Digibarometrin julkistamistilaisuus"
+  },
+  {
+    "row": "3",
+    "column": "D",
+    "content": "Etlatiedon toteuttama Digibarometri julkaistaan nyt toista kertaa. Digibarometri 2015 päivittää ja syventää viimevuotista analyysia. "
+  },
+  {
+    "row": "3",
+    "column": "E",
+    "content": "Kaupan liitto"
+  },
+  {
+    "row": "3",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "3",
+    "column": "I",
+    "content": "Musiikkitalo"
+  },
+  {
+    "row": "3",
+    "column": "J",
+    "content": "http://verkkoteollisuus.fi/fi/ajankohtaista/tapahtumat/143/digibarometrin-julkistustilaisuus-173/"
+  },
+  {
+    "row": "4",
+    "column": "A",
+    "content": "18.3."
+  },
+  {
+    "row": "4",
+    "column": "C",
+    "content": "Frontend.fi March meetup"
+  },
+  {
+    "row": "4",
+    "column": "E",
+    "content": "Frontend.fi"
+  },
+  {
+    "row": "4",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "4",
+    "column": "I",
+    "content": "Andorra"
+  },
+  {
+    "row": "4",
+    "column": "J",
+    "content": "http://frontend.fi/march-meetup-2015/"
+  },
+  {
+    "row": "5",
+    "column": "A",
+    "content": "24.3."
+  },
+  {
+    "row": "5",
+    "column": "C",
+    "content": "Internet of Things-näkymät Suomessa ja pohjoismaissa"
+  },
+  {
+    "row": "5",
+    "column": "D",
+    "content": "Jäsentapahtuma Soneran tiloissa"
+  },
+  {
+    "row": "5",
+    "column": "E",
+    "content": "Tivia"
+  },
+  {
+    "row": "5",
+    "column": "G",
+    "content": "1"
+  },
+  {
+    "row": "5",
+    "column": "J",
+    "content": "https://crm.ttlry.fi/ttlkotisivupalvelut/Tilaisuus_tiedot.aspx?TIAId=1087&kaid=91672"
+  },
+  {
+    "row": "6",
+    "column": "A",
+    "content": "25.3."
+  },
+  {
+    "row": "6",
+    "column": "C",
+    "content": "Digitalist Pop Up: digimyynnin uusi ja vanha ulottuvuus"
+  },
+  {
+    "row": "6",
+    "column": "D",
+    "content": "Miten teknologiat muuttavat verkossa tehtävää myyntiä, vai muuttavatko ollenkaan?"
+  },
+  {
+    "row": "6",
+    "column": "E",
+    "content": "Digitalist Network"
+  },
+  {
+    "row": "6",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "6",
+    "column": "I",
+    "content": "Hotel Presidentti"
+  },
+  {
+    "row": "6",
+    "column": "J",
+    "content": "http://digitalistnetwork.com/event/digitalist-pop-up-digimyynnin-uusi-vanha-ulottuvuus/"
+  },
+  {
+    "row": "7",
+    "column": "A",
+    "content": "25.3."
+  },
+  {
+    "row": "7",
+    "column": "C",
+    "content": "Big Data & Machine Learning"
+  },
+  {
+    "row": "7",
+    "column": "D",
+    "content": "-"
+  },
+  {
+    "row": "7",
+    "column": "E",
+    "content": "Internet of Things Meetup Helsinki"
+  },
+  {
+    "row": "7",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "7",
+    "column": "I",
+    "content": "?"
+  },
+  {
+    "row": "7",
+    "column": "J",
+    "content": "http://www.meetup.com/Internet-of-Things-Helsinki/events/"
+  },
+  {
+    "row": "8",
+    "column": "A",
+    "content": "26.3."
+  },
+  {
+    "row": "8",
+    "column": "C",
+    "content": "Perheyritystapahtuma 2015"
+  },
+  {
+    "row": "8",
+    "column": "D",
+    "content": "Perheyritys - sydämen tapahtuma"
+  },
+  {
+    "row": "8",
+    "column": "E",
+    "content": "Perheyritysten liitto"
+  },
+  {
+    "row": "8",
+    "column": "I",
+    "content": "Wanha Satama"
+  },
+  {
+    "row": "8",
+    "column": "J",
+    "content": "http://www.perheyritystapahtuma.fi/"
+  },
+  {
+    "row": "10",
+    "column": "A",
+    "content": "Q2"
+  },
+  {
+    "row": "11",
+    "column": "A",
+    "content": "16.4."
+  },
+  {
+    "row": "11",
+    "column": "C",
+    "content": "Digi RoadShow"
+  },
+  {
+    "row": "11",
+    "column": "D",
+    "content": "miten digitaalisuus on muuttanut niiden liiketoimintaa ja parantanut kilpailukykyä."
+  },
+  {
+    "row": "11",
+    "column": "E",
+    "content": "Tekes"
+  },
+  {
+    "row": "11",
+    "column": "I",
+    "content": "JAMK Jyväskylä"
+  },
+  {
+    "row": "11",
+    "column": "J",
+    "content": "https://tapahtumat.tekes.fi/tapahtuma/digiroadshowjyvaskyla"
+  },
+  {
+    "row": "12",
+    "column": "A",
+    "content": "16.4."
+  },
+  {
+    "row": "12",
+    "column": "B",
+    "content": "17.4."
+  },
+  {
+    "row": "12",
+    "column": "C",
+    "content": "Innofrugal"
+  },
+  {
+    "row": "12",
+    "column": "D",
+    "content": "Innovation conference"
+  },
+  {
+    "row": "12",
+    "column": "E",
+    "content": "TNFIS"
+  },
+  {
+    "row": "12",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "12",
+    "column": "I",
+    "content": "GE Healthcare, Kuortaneenkatu"
+  },
+  {
+    "row": "12",
+    "column": "J",
+    "content": "http://www.innofrugal.com/"
+  },
+  {
+    "row": "13",
+    "column": "A",
+    "content": "17.4."
+  },
+  {
+    "row": "13",
+    "column": "C",
+    "content": "Lean Startup Machine"
+  },
+  {
+    "row": "13",
+    "column": "D",
+    "content": "3 day intensive workshop where entrepreneurs and innovators learn how to build disruptive products based on validation"
+  },
+  {
+    "row": "13",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "13",
+    "column": "J",
+    "content": "https://www.leanstartupmachine.com/cities/helsinki"
+  },
+  {
+    "row": "14",
+    "column": "A",
+    "content": "17.4."
+  },
+  {
+    "row": "14",
+    "column": "C",
+    "content": "Internet of Things - ideasta palveluksi"
+  },
+  {
+    "row": "14",
+    "column": "E",
+    "content": "Sovelto"
+  },
+  {
+    "row": "14",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "14",
+    "column": "J",
+    "content": "http://www.sovelto.fi/kurssit/sovelto-events/internet-things-ideasta-palveluksi"
+  },
+  {
+    "row": "15",
+    "column": "A",
+    "content": "21.4."
+  },
+  {
+    "row": "15",
+    "column": "B",
+    "content": "22.4."
+  },
+  {
+    "row": "15",
+    "column": "C",
+    "content": "VaikuttajaForum Energia"
+  },
+  {
+    "row": "15",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "15",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "15",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "15",
+    "column": "H",
+    "content": "Valtakunnalliset ja paikalliset energiayhtiöt, liiketoiminta-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "15",
+    "column": "I",
+    "content": "Vanajanlinna"
+  },
+  {
+    "row": "16",
+    "column": "A",
+    "content": "22.4."
+  },
+  {
+    "row": "16",
+    "column": "B",
+    "content": "24.4."
+  },
+  {
+    "row": "16",
+    "column": "C",
+    "content": "ICTexpo"
+  },
+  {
+    "row": "16",
+    "column": "D",
+    "content": "Paikka jossa IT ja liiketoiminta kohtaavat"
+  },
+  {
+    "row": "16",
+    "column": "E",
+    "content": "Easyfairs"
+  },
+  {
+    "row": "16",
+    "column": "F",
+    "content": "Juho meiltä puhumassa"
+  },
+  {
+    "row": "16",
+    "column": "H",
+    "content": "Liiketoimintajohto, IT-ammattilaiset"
+  },
+  {
+    "row": "16",
+    "column": "J",
+    "content": "http://www.easyfairs.com/fi/events_216/ictexpo-2015_63499/ictexpo-2015_63500/"
+  },
+  {
+    "row": "17",
+    "column": "A",
+    "content": "5.5."
+  },
+  {
+    "row": "17",
+    "column": "C",
+    "content": "Kaupan digipäivä"
+  },
+  {
+    "row": "17",
+    "column": "D",
+    "content": "Kaupan liitto järjestää Digipäivän, joka tarjoaa laaja-alaisesti näkökulmia sähköiseen liiketoimintaan."
+  },
+  {
+    "row": "17",
+    "column": "E",
+    "content": "Kaupan liitto"
+  },
+  {
+    "row": "17",
+    "column": "I",
+    "content": "Finlandiatalo"
+  },
+  {
+    "row": "17",
+    "column": "J",
+    "content": "http://www.kauppa.fi/k/kaupandigipaiva"
+  },
+  {
+    "row": "18",
+    "column": "A",
+    "content": "5.5."
+  },
+  {
+    "row": "18",
+    "column": "B",
+    "content": "6.5."
+  },
+  {
+    "row": "18",
+    "column": "C",
+    "content": "VaikuttajaForum Media&Telecom"
+  },
+  {
+    "row": "18",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "18",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "18",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "18",
+    "column": "H",
+    "content": "Media-, telecom-, ja peliteollisuuden liiketoiminta-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "18",
+    "column": "I",
+    "content": "Vanajanlinna"
+  },
+  {
+    "row": "19",
+    "column": "A",
+    "content": "19.5."
+  },
+  {
+    "row": "19",
+    "column": "B",
+    "content": "20.5."
+  },
+  {
+    "row": "19",
+    "column": "C",
+    "content": "VaikuttajaForum Retail & FMCG"
+  },
+  {
+    "row": "19",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "19",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "19",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "19",
+    "column": "H",
+    "content": "Vähittäiskauppojen, elintarviketeollisuuden ja FMCG-yritysten liiketoiminta-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "20",
+    "column": "A",
+    "content": "25.5."
+  },
+  {
+    "row": "20",
+    "column": "B",
+    "content": "26.5."
+  },
+  {
+    "row": "20",
+    "column": "C",
+    "content": "Arctic 15: Exit Path"
+  },
+  {
+    "row": "20",
+    "column": "D",
+    "content": "Arctic15: Exit Path is a two day conference that focuses on real business value. We will not just leave you stranded - our team will provide the tools, knowledge and the push needed to get that ROI. "
+  },
+  {
+    "row": "20",
+    "column": "E",
+    "content": "Arctic Startup"
+  },
+  {
+    "row": "20",
+    "column": "I",
+    "content": "Kaapelitehdas"
+  },
+  {
+    "row": "20",
+    "column": "J",
+    "content": "http://arctic15.com/"
+  },
+  {
+    "row": "21",
+    "column": "A",
+    "content": "26.5."
+  },
+  {
+    "row": "21",
+    "column": "C",
+    "content": "Tivi ja T&T Teollinen internet 2015"
+  },
+  {
+    "row": "21",
+    "column": "D",
+    "content": "-"
+  },
+  {
+    "row": "21",
+    "column": "E",
+    "content": "Talentum"
+  },
+  {
+    "row": "21",
+    "column": "F",
+    "content": "Me mukana"
+  },
+  {
+    "row": "21",
+    "column": "G",
+    "content": "3"
+  },
+  {
+    "row": "21",
+    "column": "H",
+    "content": "Liiketoiminta-, IT-, kehitys-, tuotanto-, tuotekehitys- ja teknologiapäättäjät"
+  },
+  {
+    "row": "21",
+    "column": "I",
+    "content": "Scandic Park"
+  },
+  {
+    "row": "21",
+    "column": "J",
+    "content": "http://talentumevents.com/teollineninternet/ohjelma/"
+  },
+  {
+    "row": "22",
+    "column": "A",
+    "content": "28.5."
+  },
+  {
+    "row": "22",
+    "column": "B",
+    "content": "29.5."
+  },
+  {
+    "row": "22",
+    "column": "C",
+    "content": "Tech Conference"
+  },
+  {
+    "row": "22",
+    "column": "E",
+    "content": "Sovelto"
+  },
+  {
+    "row": "22",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "22",
+    "column": "H",
+    "content": "IT-ammattilaiset ja kehittäjkät"
+  },
+  {
+    "row": "22",
+    "column": "J",
+    "content": "http://www.sovelto.fi/kurssit/sovelto-events/tech-conference-2015"
+  },
+  {
+    "row": "23",
+    "column": "A",
+    "content": "2.6."
+  },
+  {
+    "row": "23",
+    "column": "C",
+    "content": "Internet of Everything"
+  },
+  {
+    "row": "23",
+    "column": "D",
+    "content": "-"
+  },
+  {
+    "row": "23",
+    "column": "E",
+    "content": "Verkkoteollisuus ry"
+  },
+  {
+    "row": "23",
+    "column": "J",
+    "content": "http://verkkoteollisuus.fi/fi/ajankohtaista/tapahtumat/147/internet-everything-262015/"
+  },
+  {
+    "row": "24",
+    "column": "A",
+    "content": "2.6."
+  },
+  {
+    "row": "24",
+    "column": "B",
+    "content": "3.6."
+  },
+  {
+    "row": "24",
+    "column": "C",
+    "content": "VaikuttajaForum Pankki ja Vakuutus"
+  },
+  {
+    "row": "24",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "24",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "24",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "24",
+    "column": "H",
+    "content": "Pankkien ja vakuutusyhtiöiden liiketoiminta-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "25",
+    "column": "A",
+    "content": "9.6."
+  },
+  {
+    "row": "25",
+    "column": "B",
+    "content": "10.6."
+  },
+  {
+    "row": "25",
+    "column": "C",
+    "content": "Tivi Käyttökokemus & käytettävyys 2015"
+  },
+  {
+    "row": "25",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "25",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "25",
+    "column": "H",
+    "content": "Tietohallintopäättäjät"
+  },
+  {
+    "row": "25",
+    "column": "I",
+    "content": "Scandic Park"
+  },
+  {
+    "row": "26",
+    "column": "A",
+    "content": "16.6."
+  },
+  {
+    "row": "26",
+    "column": "B",
+    "content": "17.6."
+  },
+  {
+    "row": "26",
+    "column": "C",
+    "content": "Future Money Nordics"
+  },
+  {
+    "row": "26",
+    "column": "D",
+    "content": "Now in its second year - Finextra Future Money comes to Helsinki for a two-day event bringing together industry leaders in digital banking, payments and innovation."
+  },
+  {
+    "row": "26",
+    "column": "E",
+    "content": "Finextra Research Limited"
+  },
+  {
+    "row": "26",
+    "column": "I",
+    "content": "Messukeskus"
+  },
+  {
+    "row": "26",
+    "column": "J",
+    "content": "http://www.futuremoneynordics.com/default.aspx"
+  },
+  {
+    "row": "28",
+    "column": "A",
+    "content": "Q3 & Q4"
+  },
+  {
+    "row": "29",
+    "column": "A",
+    "content": "13.8."
+  },
+  {
+    "row": "29",
+    "column": "C",
+    "content": "Omnichannel"
+  },
+  {
+    "row": "29",
+    "column": "D",
+    "content": "Tule mukaan kuulemaan käytännön kokemuksia siitä, miten eri kanavia yhdistelemällä on tehty isoa bisnestä ja kovia kasvulukuja. "
+  },
+  {
+    "row": "29",
+    "column": "E",
+    "content": "Verkkoteollisuus ry"
+  },
+  {
+    "row": "29",
+    "column": "J",
+    "content": "http://verkkoteollisuus.fi/fi/ajankohtaista/tapahtumat/145/omnichannel-1382015/"
+  },
+  {
+    "row": "30",
+    "column": "A",
+    "content": "16.9."
+  },
+  {
+    "row": "30",
+    "column": "C",
+    "content": "Design ja käyttäjälähtöinen suunnittelu"
+  },
+  {
+    "row": "30",
+    "column": "E",
+    "content": "Divia"
+  },
+  {
+    "row": "30",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "30",
+    "column": "I",
+    "content": "Aalto Yliopisto"
+  },
+  {
+    "row": "30",
+    "column": "J",
+    "content": "http://www.divia.fi/divia/tapahtuma/divia-2015-design-ja-k%C3%A4ytt%C3%A4j%C3%A4l%C3%A4ht%C3%B6inen-suunnittelu"
+  },
+  {
+    "row": "31",
+    "column": "A",
+    "content": "16.9."
+  },
+  {
+    "row": "31",
+    "column": "B",
+    "content": "18.9."
+  },
+  {
+    "row": "31",
+    "column": "C",
+    "content": "Teollinen internet -laivaseminaari"
+  },
+  {
+    "row": "31",
+    "column": "D",
+    "content": "Tietojärjestelmätyön ammattilaisten laivaseminaari syyskuussa 2015."
+  },
+  {
+    "row": "31",
+    "column": "E",
+    "content": "Sytyke ry"
+  },
+  {
+    "row": "31",
+    "column": "F",
+    "content": "2000€ osallistuminen?"
+  },
+  {
+    "row": "31",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "31",
+    "column": "I",
+    "content": "Silja Serenade"
+  },
+  {
+    "row": "31",
+    "column": "J",
+    "content": "http://www.sytyke.org/tapahtumat/laivaseminaari-2015/"
+  },
+  {
+    "row": "32",
+    "column": "A",
+    "content": "22.9."
+  },
+  {
+    "row": "32",
+    "column": "B",
+    "content": "23.9."
+  },
+  {
+    "row": "32",
+    "column": "C",
+    "content": "Markkoinointiviestinnän viikko"
+  },
+  {
+    "row": "32",
+    "column": "F",
+    "content": "Ehdotettu meiltä puhujaa"
+  },
+  {
+    "row": "32",
+    "column": "G",
+    "content": "3"
+  },
+  {
+    "row": "32",
+    "column": "I",
+    "content": "Wanha Satama"
+  },
+  {
+    "row": "32",
+    "column": "J",
+    "content": "http://www.markkinointiviestinnanviikko.fi/index"
+  },
+  {
+    "row": "33",
+    "column": "A",
+    "content": "Lokakuu"
+  },
+  {
+    "row": "33",
+    "column": "C",
+    "content": "Hype"
+  },
+  {
+    "row": "33",
+    "column": "D",
+    "content": "The digital revolution event"
+  },
+  {
+    "row": "33",
+    "column": "E",
+    "content": "Wanha Satama"
+  },
+  {
+    "row": "33",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "33",
+    "column": "I",
+    "content": "Wanha Satama"
+  },
+  {
+    "row": "34",
+    "column": "A",
+    "content": "6.10."
+  },
+  {
+    "row": "34",
+    "column": "B",
+    "content": "7.10."
+  },
+  {
+    "row": "34",
+    "column": "C",
+    "content": "VaikuttajaForum Terveydenhuolto"
+  },
+  {
+    "row": "34",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "34",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "34",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "34",
+    "column": "H",
+    "content": "Keskussairaaloiden, sairaanhoitopiirien ja yksityisen sairaanhoidon hallinto-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "34",
+    "column": "I",
+    "content": "Vanajanlinna"
+  },
+  {
+    "row": "35",
+    "column": "A",
+    "content": "27.10."
+  },
+  {
+    "row": "35",
+    "column": "C",
+    "content": "Digital Business Services"
+  },
+  {
+    "row": "35",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "35",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "35",
+    "column": "H",
+    "content": "Organisaatioin sähköisten palveluiden ja verkkoliiketoiminnan kehittämisestä vastaava liiketoiminta-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "36",
+    "column": "A",
+    "content": "3.11."
+  },
+  {
+    "row": "36",
+    "column": "B",
+    "content": "4.11."
+  },
+  {
+    "row": "36",
+    "column": "C",
+    "content": "VaikuttajaForum Prosessiteollisuus"
+  },
+  {
+    "row": "36",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "36",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "36",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "36",
+    "column": "H",
+    "content": "Metalli-, metsä-, kemian- ja kaivannaisteollisuus: liiketoiminta-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "37",
+    "column": "A",
+    "content": "4.11."
+  },
+  {
+    "row": "37",
+    "column": "B",
+    "content": "5.11."
+  },
+  {
+    "row": "37",
+    "column": "C",
+    "content": "GIS Paikkatietomarkkinat"
+  },
+  {
+    "row": "37",
+    "column": "I",
+    "content": "Messukeskus"
+  },
+  {
+    "row": "38",
+    "column": "A",
+    "content": "11.11."
+  },
+  {
+    "row": "38",
+    "column": "B",
+    "content": "12.11."
+  },
+  {
+    "row": "38",
+    "column": "C",
+    "content": "Slush"
+  },
+  {
+    "row": "38",
+    "column": "G",
+    "content": "3"
+  },
+  {
+    "row": "38",
+    "column": "I",
+    "content": "Messukeskus"
+  },
+  {
+    "row": "39",
+    "column": "A",
+    "content": "24.11."
+  },
+  {
+    "row": "39",
+    "column": "B",
+    "content": "25.11."
+  },
+  {
+    "row": "39",
+    "column": "C",
+    "content": "VaikuttajaForum Valtionhallinto"
+  },
+  {
+    "row": "39",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "39",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "39",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "39",
+    "column": "H",
+    "content": "Ministeriöiden ja isompien valtionhallinnon yksiköiden ja niiden alaisten organisaatioiden hallinto-, talous-, kehitys- ja tietohallintojohto"
+  },
+  {
+    "row": "39",
+    "column": "I",
+    "content": "Vanajanlinna"
+  },
+  {
+    "row": "40",
+    "column": "A",
+    "content": "2.12."
+  },
+  {
+    "row": "40",
+    "column": "C",
+    "content": "Teollinen internet   "
+  },
+  {
+    "row": "40",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "40",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "40",
+    "column": "H",
+    "content": "Teollisen internetin kehittämisestä vastaavat päättäjät"
+  },
+  {
+    "row": "41",
+    "column": "A",
+    "content": "8.12."
+  },
+  {
+    "row": "41",
+    "column": "C",
+    "content": "Service Design"
+  },
+  {
+    "row": "41",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "41",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "41",
+    "column": "H",
+    "content": "Yrityksen asiakaskokemuksesta vastaavat päättäjät"
+  },
+  {
+    "row": "43",
+    "column": "A",
+    "content": "2016"
+  },
+  {
+    "row": "44",
+    "column": "A",
+    "content": "Tammikuu"
+  },
+  {
+    "row": "44",
+    "column": "C",
+    "content": "http://scan-agile.org/"
+  },
+  {
+    "row": "45",
+    "column": "A",
+    "content": "19.1.2016"
+  },
+  {
+    "row": "45",
+    "column": "B",
+    "content": "20.1.2016"
+  },
+  {
+    "row": "45",
+    "column": "C",
+    "content": "VaikuttajaForum Kone- ja Laitevalmistaja"
+  },
+  {
+    "row": "45",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "45",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "45",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "45",
+    "column": "H",
+    "content": "Konepajateollisuuden liiketoiminta-, talous, kehitys-- ja tietohallintojohto"
+  },
+  {
+    "row": "45",
+    "column": "I",
+    "content": "Vanajanlinna"
+  },
+  {
+    "row": "46",
+    "column": "A",
+    "content": "2.2.2016"
+  },
+  {
+    "row": "46",
+    "column": "B",
+    "content": "3.2.2016"
+  },
+  {
+    "row": "46",
+    "column": "C",
+    "content": "VaikuttajaForum Kuntasektori"
+  },
+  {
+    "row": "46",
+    "column": "D",
+    "content": "Saman alan päättäjiä yhdessä paikassa"
+  },
+  {
+    "row": "46",
+    "column": "E",
+    "content": "Management Events"
+  },
+  {
+    "row": "46",
+    "column": "G",
+    "content": "2"
+  },
+  {
+    "row": "46",
+    "column": "H",
+    "content": "30 suurimman kunnan sekä merkittävimpien kuntayhtymien kunnanjohto, talous-,kehitys- ja tietohallintojohto sekä teknisen toimen ja terveystoimen johto. "
+  },
+  {
+    "row": "47",
+    "column": "A",
+    "content": "Maaliskuu"
+  },
+  {
+    "row": "47",
+    "column": "C",
+    "content": "IxDA Helsinki"
+  }
+]

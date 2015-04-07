@@ -64,12 +64,14 @@ key           | required | description
   // You can find the documentId in sheet URL
   documentId: 'abasdfsdfafsd123123',
   range: 'A1:D10',
+  // Values (cells) to show on each row. Use one or multiple column letters:
+  // Uses https://www.npmjs.com/package/string-format for formatting
   fields: [
     'Event date: {A!date}',
     '{B!uppercase}',
-    '{D}'
+    '{C} {D}'
   ],
-  // Custom formatter functions, name must match with the usage
+  // Custom formatter functions, name must match with the usage: !method
   // NOTE: Call method.toString() to every function!
   // NOTE: `moment` is available
   format: {
@@ -91,3 +93,10 @@ key           | required | description
 
 Module is MIT -licensed
 
+## Credit
+
+Module is maintained by:
+
+<a href="http://sc5.io">
+  <img src="http://logo.sc5.io/78x33.png" style="padding: 4px 0;">
+</a>

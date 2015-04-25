@@ -85,6 +85,12 @@ var List = React.createClass({
       return fieldsByColumn;
     });
 
+    // Filter if defined
+    if (this.props.filter || true) {
+      var filter = eval('(' + this.props.filter + ')');
+      rows = _.filter(rows, filter);
+    }
+
     this.setState({
       rows: rows,
       updated: now

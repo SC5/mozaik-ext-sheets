@@ -12,6 +12,8 @@ use cases where data is maintained in Google Sheets:
 
 - The widget tries to provide a generic but easy-to-use way to show content in dashboard.
 - You can also utilise the Sheets functions as the outcome is shown in widget
+- Use format functions to format some cell data
+- Use filter function to leave out some results
 
 ## Setup
 
@@ -53,12 +55,23 @@ key           | required | description
 `range`       | no       | *Range from where to list data. Example: `A2:C10` or `A2:`. Defaults to full sheet*
 `fields`      | no       | *Columns to list, using advanced formatting*
 `format`      | no       | *Custom formating functions in object, where key is name of the formatter and used like {COLUMNLETTER!formatter}. See usage for examples*
+`filter`      | no       | *Filter some rows out of the outcome by implementing the function. See usage for examples*
 
 
 ### usage
 
+Imaginary example of Google Sheet document cells:
+
+```
+    |      A     |       B       |       C       |  D  |
+ 1  | 2015-01-28 | React.js Conf | Facebook HQ   |     |
+ 2  | 2015-07-02 | ReactEurope   | Paris, France |     |
+```
+
+One widget in dashboard config:
+
 ```javascript
-// config.js
+// widget in config.js
 {
   type: 'sheets.list',
   // You can find the documentId in sheet URL
@@ -84,6 +97,21 @@ key           | required | description
       return s.toUpperCase();
     }.toString()
   },
+  // Custom function to filter some results rows
+  // If defined, each row is processed through it.
+  // Return `false` if you want to filter the row out and `true`
+  // for inclusion.
+  // NOTE: Only one variable is passed, containing all columns from current row
+  // NOTE: Variable `columns` does not contain the columns out of the range
+  // NOTE: Call method.toString() to every function!
+  filter: function(columns){
+    var eventStart = moment(columns.B, ['YYYY-MM-DD']);
+    // Filter out the results that are in past
+    if (eventStart.isBefore(new moment())) {
+      return false;
+    }
+    return true;
+  }.toString(),
   columns: 1, rows: 2,
   x: 0, y: 0
 }
@@ -95,7 +123,7 @@ Module is MIT -licensed
 
 ## Credit
 
-Module is maintained by:
+Module is backed by:
 
 <a href="http://sc5.io">
   <img src="http://logo.sc5.io/78x33.png" style="padding: 4px 0;">

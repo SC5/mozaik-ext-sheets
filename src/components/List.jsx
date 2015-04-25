@@ -85,6 +85,24 @@ var List = React.createClass({
       return fieldsByColumn;
     });
 
+    // Filter if defined
+    if (this.props.filter || true) {
+      var filter = eval('(' + this.props.filter + ')');
+      // TODO: Use filter
+
+      rows = _.filter(rows, function(cols) {
+        var start = moment(cols.B, ['D.M']);
+
+        if (start.isBefore(new moment())) {
+          return false;
+        }
+
+        //console.log('1 ROW - cols', cols);
+        return true;
+      })
+    }
+
+
     this.setState({
       rows: rows,
       updated: now

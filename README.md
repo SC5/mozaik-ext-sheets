@@ -123,8 +123,4 @@ Module is MIT -licensed
 
 ## Credit
 
-Module is backed by:
-
-<a href="http://sc5.io">
-  <img src="http://logo.sc5.io/78x33.png" style="padding: 4px 0;">
-</a>
+Module is backed by: [SC5](http://sc5.io)

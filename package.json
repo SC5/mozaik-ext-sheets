@@ -1,11 +1,11 @@
 {
   "name": "mozaik-ext-sheets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Mozaïk extension for listing data from Google Sheets",
   "author": "SC5",
   "license": "MIT",
   "engines": {
-    "node": "0.10.x"
+    "node": "4.0.x"
   },
   "repository": {
     "type": "git",

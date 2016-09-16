@@ -1,3 +1,5 @@
-module.exports = {
-  List: require('./List.jsx')
-}
+import List from './List.jsx';
+
+export default {
+  List
+};

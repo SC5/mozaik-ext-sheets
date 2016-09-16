@@ -1,14 +1,14 @@
 "use strict";
-var fs = require('fs');
-var path = require('path');
-var _ = require('lodash');
-var Promise = require('bluebird');
-var chalk = require('chalk');
-var Sheets = require('google-sheets-api').Sheets;
-var config = require('./config');
+import path from 'path';
+import fs from 'fs';
+import config  from './config';
+import Promise from 'bluebird';
+import chalk from 'chalk';
+import SheetsAPI from 'google-sheets-api';
 
+const Sheets = SheetsAPI.Sheets;
 
-module.exports = function (mozaik) {
+const client = (mozaik) => {
   mozaik.loadApiConfig(config);
 
   var serviceEmail = config.get('sheets.googleServiceEmail');
@@ -20,7 +20,7 @@ module.exports = function (mozaik) {
   }
   // Check the existance of .PEM file
   if (!fs.existsSync(serviceKeyPath)) {
-    mozaik.logger.error('Failed to find .PEM file: %s -- ignoring API', serviceKeyPath);
+    mozaik.logger.error(`Failed to find .PEM file: ${serviceKeyPath} -- ignoring API`);
     return {
       list: function(params) {
         return Promise.reject([]);
@@ -34,10 +34,10 @@ module.exports = function (mozaik) {
     key: fs.readFileSync(serviceKeyPath).toString()
   });
 
-  return {
-    list: function(params) {
+  const apiCalls = {
+    list(params) {
       params = params || {};
-      mozaik.logger.info('Reading sheets cells from %s', params.documentId);
+      mozaik.logger.info(`Reading sheets cells from ${params.documentId}`);
 
       return sheets
       .getSheets(params.documentId)
@@ -54,5 +54,9 @@ module.exports = function (mozaik) {
         return Promise.reject([]);
       })
     }
-  }
+  };
+
+  return apiCalls;
 };
+
+export default client;

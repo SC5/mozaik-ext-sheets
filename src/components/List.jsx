@@ -31,17 +31,20 @@ class List extends Component {
   }
 
   componentWillMount() {
+    var extender = {};
+
     // Register format functions (!method) if any defined in config
     // NOTE: Functions needs to be converted into String to get them here
-    _.each(this.props.format || [], (funk, key) => {
-      var extender = {};
+    _.each(this.props.format || {}, (funk, key) => {
       extender[key] = eval(`(${funk})`);
-      format.extend(String.prototype, extender);
+      console.log(extender[key], key);
     });
+
+    format.extend(String.prototype, extender);
   }
 
   getApiRequest() {
-    const id = `sheets.list.${this.props.documentId}`;
+    const id = `sheets.list.${this.props.documentId}-${this.props.sheetNo}`;
 
     return {
       id: id,
@@ -67,6 +70,7 @@ class List extends Component {
       _.chain(rowCells)
         .groupBy('column')
         .each((columnEntry, key) => {
+          //console.log('ENT', fieldsByColumn, columnEntry, key);
           // Columns are unique, thus we can flatten the entry
           columnEntry = columnEntry[0];
           fieldsByColumn[key] = columnEntry.content;
@@ -94,7 +98,8 @@ class List extends Component {
     const items = this.state.rows.map((rowFields, rowIndex) => {
       // Render fields
       const fields = _.map(this.props.fields || [], (fieldTemplate, fieldIndex) => {
-        const formattedField = format(fieldTemplate, rowFields);
+        // NOTE: format() does not support extends
+        const formattedField = fieldTemplate.format(rowFields);
         const fieldIdentifier = format('field-{}', fieldIndex);
         return <span className={fieldIdentifier}>{formattedField}</span>;
       });

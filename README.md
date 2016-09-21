@@ -124,6 +124,27 @@ One widget in dashboard config:
 }
 ```
 
+## Changelog
+
+### Release 0.4.0
+
+- Replaced Gulp + Karma with Ava testing
+- Started using Eslint
+- Fixed dependencies
+- Fixed format support
+
+### Release 0.3.0
+
+- Updated support to Mozaik 1.4
+
+### Release 0.2.0
+
+- Added support for filtering
+
+### Release 0.1.0
+
+- Initial release
+
 ## License
 
 Module is MIT -licensed

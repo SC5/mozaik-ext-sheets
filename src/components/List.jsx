@@ -77,7 +77,7 @@ class List extends Component {
     });
 
     // Filter if defined
-    if (this.props.filter || true) {
+    if (this.props.filter) {
       const filter = eval(`(${this.props.filter})`);
       rows = _.filter(rows, filter);
     }
@@ -129,6 +129,10 @@ List.propTypes = {
   title: React.PropTypes.string,
   sheetNo: React.PropTypes.integer,
   range: React.PropTypes.string,
+  filter: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.bool
+  ]),
   fields: React.PropTypes.array,
   format: React.PropTypes.object
 };
@@ -136,6 +140,7 @@ List.propTypes = {
 List.defaultProps = {
   title: 'Sheets',
   sheetNo: 0,
+  filter: false,
   fields: ['{A}', '{B}', '{C}', '{D}']
 };
 

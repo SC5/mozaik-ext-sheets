@@ -47,6 +47,7 @@ class List extends Component {
       id: id,
       params: {
         documentId: this.props.documentId,
+        sheetNo: this.props.sheetNo,
         range: this.props.range
       }
     };
@@ -88,7 +89,7 @@ class List extends Component {
   }
 
   render() {
-    const title = this.props.title || 'Sheets';
+    const title = this.props.title;
 
     const items = this.state.rows.map((rowFields, rowIndex) => {
       // Render fields
@@ -130,6 +131,12 @@ List.propTypes = {
   range: React.PropTypes.string,
   fields: React.PropTypes.array,
   format: React.PropTypes.object
+};
+
+List.defaultProps = {
+  title: 'Sheets',
+  sheetNo: 0,
+  fields: ['{A}', '{B}', '{C}', '{D}']
 };
 
 reactMixin(List.prototype, ListenerMixin);

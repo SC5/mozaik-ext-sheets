@@ -104,12 +104,19 @@ One widget in dashboard config:
   // NOTE: Only one variable is passed, containing all columns from current row
   // NOTE: Variable `columns` does not contain the columns out of the range
   // NOTE: Call method.toString() to every function!
-  filter: function(columns){
-    var eventStart = moment(columns.B, ['YYYY-MM-DD']);
+  filter: function(columns, index){
+    // Filter out first two lines
+    if (index < 2) {
+      return false;
+    }
+
     // Filter out the results that are in past
+    var eventStart = moment(columns.B, ['YYYY-MM-DD']);
     if (eventStart.isBefore(new moment())) {
       return false;
     }
+
+    // Otherwise show the fields from that row
     return true;
   }.toString(),
   columns: 1, rows: 2,

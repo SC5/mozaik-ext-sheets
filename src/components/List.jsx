@@ -14,7 +14,7 @@ function formatEventTimerange(event) {
   now = moment();
   diff = start.diff(now);
   if (diff < 0) {
-    return "Ends " + end.fromNow();
+    return `Ends ${end.fromNow()}`;
   } else {
     return `${start.calendar()} to ${end.format('HH:mm')}`;
   }
@@ -33,9 +33,9 @@ class List extends Component {
   componentWillMount() {
     // Register format functions (!method) if any defined in config
     // NOTE: Functions needs to be converted into String to get them here
-    _.each(this.props.format || [], function(funk, key) {
+    _.each(this.props.format || [], (funk, key) => {
       var extender = {};
-      extender[key] = eval('(' + funk + ')');
+      extender[key] = eval(`(${funk})`);
       format.extend(String.prototype, extender);
     });
   }
@@ -60,13 +60,13 @@ class List extends Component {
     }
 
     const now = moment();
-    let rows = _.map(rawRows, function(rowCells, index) {
+    let rows = _.map(rawRows, (rowCells, index) => {
       let fieldsByColumn = {};
       // Group row cells by column and transform into format:
       // { A: { id: 'field-A1 col-A row-1', value: 'A', row: 1 }}
       _.chain(rowCells)
         .groupBy('column')
-        .each(function(columnEntry, key) {
+        .each((columnEntry, key) => {
           // Columns are unique, thus we can flatten the entry
           columnEntry = columnEntry[0];
           fieldsByColumn[key] = columnEntry.content;
@@ -78,7 +78,7 @@ class List extends Component {
 
     // Filter if defined
     if (this.props.filter || true) {
-      const filter = eval('(' + this.props.filter + ')');
+      const filter = eval(`(${this.props.filter})`);
       rows = _.filter(rows, filter);
     }
 
@@ -100,7 +100,7 @@ class List extends Component {
       });
 
       const rowIdentifier = format('row-{}', rowIndex);
-      return <li className={rowIdentifier}>{fields}</li>;
+      return <li key={rowIdentifier} className={rowIdentifier}>{fields}</li>;
     });
 
     const widget = (

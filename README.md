@@ -126,6 +126,10 @@ One widget in dashboard config:
 
 ## Changelog
 
+### Release 0.4.1
+
+- Fixed missing module: src/client
+
 ### Release 0.4.0
 
 - Replaced Gulp + Karma with Ava testing

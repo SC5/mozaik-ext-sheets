@@ -53,6 +53,7 @@ key           | required | description
 `documentId`  | yes      | *Sheets document id, taken form web UI*
 `sheetNo`     | no       | *Sheet order number, starting from 0. Defaults to first: `0`*
 `range`       | no       | *Range from where to list data. Example: `A2:C10` or `A2:`. Defaults to full sheet*
+`style`       | no       | *Show results as bullet list or table-like. Valid values: `list` (default) or `table`*
 `fields`      | no       | *Columns to list, using advanced formatting*
 `format`      | no       | *Custom formating functions in object, where key is name of the formatter and used like {COLUMNLETTER!formatter}. See usage for examples*
 `filter`      | no       | *Filter some rows out of the outcome by implementing the function. See usage for examples*
@@ -77,8 +78,13 @@ One widget in dashboard config:
   // You can find the documentId in sheet URL
   documentId: 'abasdfsdfafsd123123',
   range: 'A1:D10',
+  // Use either 'list' or 'table'
+  style: 'table',
   // Values (cells) to show on each row. Use one or multiple column letters:
   // Uses https://www.npmjs.com/package/string-format for formatting
+  // NOTE: The both `['{A} {B} {C}']` and `['{A}', '{B}', '{C}']` work, but
+  // latter makes it possible to style each field / show the values in different
+  // cells in table format
   fields: [
     'Event date: {A!date}',
     '{B!uppercase}',
@@ -125,6 +131,10 @@ One widget in dashboard config:
 ```
 
 ## Changelog
+
+### Release 0.5.0
+
+- Added support for table -styled listing
 
 ### Release 0.4.1
 

@@ -104,10 +104,11 @@ class List extends Component {
         return <span className={fieldIdentifier}>{formattedField}</span>;
       });
 
-      const rowIdentifier = format('row-{}', rowIndex);
+      const rowIdentifier = `sheets__${this.props.style}-item row-${rowIndex}`;
       return <li key={rowIdentifier} className={rowIdentifier}>{fields}</li>;
     });
 
+    const listClass = `sheets__${this.props.style}`;
     const widget = (
       <div>
         <div className="widget__header">
@@ -115,7 +116,7 @@ class List extends Component {
           <i className="fa fa-table" />
         </div>
         <div className="widget__body sheets sheets__list">
-          <ul>
+          <ul className={listClass}>
             {items}
           </ul>
         </div>
@@ -134,6 +135,7 @@ List.propTypes = {
   title: React.PropTypes.string,
   sheetNo: React.PropTypes.integer,
   range: React.PropTypes.string,
+  style: React.PropTypes.string,
   filter: React.PropTypes.oneOfType([
     React.PropTypes.string,
     React.PropTypes.bool
@@ -145,6 +147,7 @@ List.propTypes = {
 List.defaultProps = {
   title: 'Sheets',
   sheetNo: 0,
+  style: 'list',
   filter: false,
   fields: ['{A}', '{B}', '{C}', '{D}']
 };

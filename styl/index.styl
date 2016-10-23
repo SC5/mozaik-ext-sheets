@@ -1,9 +1,11 @@
+// List
 ul.sheets__list
-   // Nothing
+  // Nothing
 
 li.sheets__list-item
   // Defaults
 
+// Table
 ul.sheets__table
   padding: 0 1rem 0 1rem
 
@@ -14,4 +16,17 @@ li.sheets__table-item
     flex: 1
 
 li:nth-child(odd).sheets__table-item
+  background-color: darken($widget-bg-color, 3)
+
+// Columns
+ul.sheets__columns
+  padding: 0 1rem 0 1rem
+
+li.sheets__columns-item
+  display: flex
+
+  span
+    flex: 1
+
+li.sheets__columns-item span:nth-child(odd)
   background-color: darken($widget-bg-color, 3)

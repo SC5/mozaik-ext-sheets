@@ -1,11 +1,15 @@
 import _ from 'lodash';
+import sampleSize from 'lodash.samplesize';
 import React, { Component, PropTypes } from 'react';
 import reactMixin from 'react-mixin';
 import { ListenerMixin } from 'reflux';
+import classNames from 'classnames';
 import moment from 'moment';
 import format from 'string-format';
 import Mozaik from 'mozaik/browser';
 
+
+const MIN_FONT_SIZE = 10;
 
 function formatEventTimerange(event) {
   let start, end, now, diff;
@@ -27,6 +31,8 @@ class List extends Component {
 
     this.state = {
       rows: [],
+      width: 200,
+      height: 200
     };
   }
 
@@ -37,10 +43,20 @@ class List extends Component {
     // NOTE: Functions needs to be converted into String to get them here
     _.each(this.props.format || {}, (funk, key) => {
       extender[key] = eval(`(${funk})`);
-      console.log(extender[key], key);
     });
 
     format.extend(String.prototype, extender);
+  }
+
+  componentDidMount() {
+    this.mounted = true;
+
+    // Get area size
+    const bodyElement = this._body.getDOMNode();
+    this.setState({
+      height: bodyElement.clientHeight,
+      width: bodyElement.clientWidth
+    });
   }
 
   getApiRequest() {
@@ -70,7 +86,6 @@ class List extends Component {
       _.chain(rowCells)
         .groupBy('column')
         .each((columnEntry, key) => {
-          //console.log('ENT', fieldsByColumn, columnEntry, key);
           // Columns are unique, thus we can flatten the entry
           columnEntry = columnEntry[0];
           fieldsByColumn[key] = columnEntry.content;
@@ -86,14 +101,34 @@ class List extends Component {
       rows = _.filter(rows, filter);
     }
 
+    // Pick random(s) if defined
+    if (this.props.random > 0) {
+      rows = sampleSize(rows, this.props.random);
+    }
+
     this.setState({
       rows: rows,
       updated: now
     });
   }
 
+  getFontSize(width, height, textLength = 1) {
+    const textLengthFactor = 2.1;
+    let size = Math.ceil(Math.sqrt((width * height / (textLength * textLengthFactor))));
+    return size > MIN_FONT_SIZE ? size : MIN_FONT_SIZE;
+  }
+
   render() {
     const title = this.props.title;
+    let textLength = 0;
+    const styles = _.defaultsDeep(this.props.styles, {
+      list: {
+
+      },
+      listItem: {
+
+      }
+    });
 
     const items = this.state.rows.map((rowFields, rowIndex) => {
       // Render fields
@@ -101,12 +136,30 @@ class List extends Component {
         // NOTE: format() does not support extends
         const formattedField = fieldTemplate.format(rowFields);
         const fieldIdentifier = format('field-{}', fieldIndex);
+        textLength += formattedField.length;
         return <span className={fieldIdentifier}>{formattedField}</span>;
       });
 
       const rowIdentifier = `sheets__${this.props.style}-item row-${rowIndex}`;
-      return <li key={rowIdentifier} className={rowIdentifier}>{fields}</li>;
+      return <li style={styles.listItem} key={rowIdentifier} className={rowIdentifier}>{fields}</li>;
     });
+
+    // Calculate or use specific font size
+    let style = {};
+    let fontSize = null;
+    if (this.props.fontSize === 'auto') {
+      const fontSize = this.getFontSize(this.state.width, this.state.height, textLength);
+      style = {
+        fontSize: fontSize,
+        lineHeight: `${fontSize + 2}px`
+      };
+    }
+    else if (this.props.fontSize) {
+      style = {
+        fontSize: this.props.fontSize,
+        lineHeight: `${fontSize + 2}px`
+      };
+    }
 
     const listClass = `sheets__${this.props.style}`;
     const widget = (
@@ -115,8 +168,8 @@ class List extends Component {
           {title}
           <i className="fa fa-table" />
         </div>
-        <div className="widget__body sheets sheets__list">
-          <ul className={listClass}>
+        <div className="widget__body sheets sheets_list" style={style} ref={(c) => this._body = c}>
+          <ul style={styles.list} className={listClass}>
             {items}
           </ul>
         </div>
@@ -136,6 +189,9 @@ List.propTypes = {
   sheetNo: React.PropTypes.integer,
   range: React.PropTypes.string,
   style: React.PropTypes.string,
+  styles: React.PropTypes.object,
+  fontSize: React.PropTypes.string,
+  random: React.PropTypes.integer,
   filter: React.PropTypes.oneOfType([
     React.PropTypes.string,
     React.PropTypes.bool
@@ -148,7 +204,10 @@ List.defaultProps = {
   title: 'Sheets',
   sheetNo: 0,
   style: 'list',
+  styles: {},
+  fontSize: '',
   filter: false,
+  random: 0,
   fields: ['{A}', '{B}', '{C}', '{D}']
 };
 

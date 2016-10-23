@@ -54,7 +54,10 @@ key           | required | description
 `sheetNo`     | no       | *Sheet order number, starting from 0. Defaults to first: `0`*
 `range`       | no       | *Range from where to list data. Example: `A2:C10` or `A2:`. Defaults to full sheet*
 `style`       | no       | *Show results as bullet list or table-like. Valid values: `list` (default) or `table`*
+`styles`      | no       | *Inline style defintions in React supported style format. Sub-elements: list, listItem`*
 `fields`      | no       | *Columns to list, using advanced formatting*
+`random`      | no       | *Pick and show random number entries, defined by the value. Zero means no random is used (Default). Example: `random: 1`*
+`fontSize`    | no       | *Use default (``), fixed  (`12px`) or auto scaled fontsize (`auto`)*
 `format`      | no       | *Custom formating functions in object, where key is name of the formatter and used like {COLUMNLETTER!formatter}. See usage for examples*
 `filter`      | no       | *Filter some rows out of the outcome by implementing the function. See usage for examples*
 
@@ -79,7 +82,18 @@ One widget in dashboard config:
   documentId: 'abasdfsdfafsd123123',
   range: 'A1:D10',
   // Use either 'list' or 'table'
-  style: 'table',
+  // Table shows every other row with different bg color
+  style: 'list',
+  fontSize: 'auto', // Use default, fixed or auto-scaled font size
+  // Customize the list or list item styles
+  styles: {
+    list: {
+      listStyle: 'none'
+    },
+    listItem: {
+      textAlign: 'center'
+    }
+  },
   // Values (cells) to show on each row. Use one or multiple column letters:
   // Uses https://www.npmjs.com/package/string-format for formatting
   // NOTE: The both `['{A} {B} {C}']` and `['{A}', '{B}', '{C}']` work, but
@@ -90,6 +104,9 @@ One widget in dashboard config:
     '{B!uppercase}',
     '{C} {D}'
   ],
+  // Show two random entries (after optional filtering)
+  // Handy for picking random quote of the day etc.
+  random: 2,
   // Custom formatter functions, name must match with the usage: !method
   // NOTE: Call method.toString() to every function!
   // NOTE: `moment` is available
@@ -131,6 +148,11 @@ One widget in dashboard config:
 ```
 
 ## Changelog
+
+### Release 0.6.0
+
+- Added support showing `random` number (0-n) of entries
+- Added support for styling elements with widget arguments
 
 ### Release 0.5.0
 

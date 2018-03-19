@@ -1,5 +1,10 @@
 import _ from 'lodash';
 import sampleSize from 'lodash.samplesize';
+import map from 'lodash.map';
+import flow from 'lodash.flow';
+import defaultsDeep from 'lodash.defaultsdeep';
+import forEach from 'lodash.foreach';
+import filter from 'lodash.filter';
 import React, { Component, PropTypes } from 'react';
 import reactMixin from 'react-mixin';
 import { ListenerMixin } from 'reflux';
@@ -41,7 +46,7 @@ class List extends Component {
 
     // Register format functions (!method) if any defined in config
     // NOTE: Functions needs to be converted into String to get them here
-    _.each(this.props.format || {}, (funk, key) => {
+    each(this.props.format || {}, (funk, key) => {
       extender[key] = eval(`(${funk})`);
     });
 
@@ -79,18 +84,19 @@ class List extends Component {
     }
 
     const now = moment();
-    let rows = _.map(rawRows, (rowCells, index) => {
+    let rows = map(rawRows, (rowCells, index) => {
       let fieldsByColumn = {};
       // Group row cells by column and transform into format:
       // { A: { id: 'field-A1 col-A row-1', value: 'A', row: 1 }}
-      _.chain(rowCells)
-        .groupBy('column')
-        .each((columnEntry, key) => {
+      flow(
+        groupBy('column'),
+        each((columnEntry, key) => {
           // Columns are unique, thus we can flatten the entry
           columnEntry = columnEntry[0];
           fieldsByColumn[key] = columnEntry.content;
-        })
-        .value();
+        }),
+        (rowCells)
+      );
 
       return fieldsByColumn;
     });
@@ -98,7 +104,7 @@ class List extends Component {
     // Filter if defined
     if (this.props.filter) {
       const filter = eval(`(${this.props.filter})`);
-      rows = _.filter(rows, filter);
+      rows = filter(rows, filter);
     }
 
     // Pick random(s) if defined
@@ -121,7 +127,7 @@ class List extends Component {
   render() {
     const title = this.props.title;
     let textLength = 0;
-    const styles = _.defaultsDeep(this.props.styles, {
+    const styles = defaultsDeep(this.props.styles, {
       list: {
 
       },
@@ -132,7 +138,7 @@ class List extends Component {
 
     const items = this.state.rows.map((rowFields, rowIndex) => {
       // Render fields
-      const fields = _.map(this.props.fields || [], (fieldTemplate, fieldIndex) => {
+      const fields = map(this.props.fields || [], (fieldTemplate, fieldIndex) => {
         // NOTE: format() does not support extends
         const formattedField = fieldTemplate.format(rowFields);
         const fieldIdentifier = format('field-{}', fieldIndex);

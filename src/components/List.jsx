@@ -8,7 +8,6 @@ import filter from 'lodash.filter';
 import React, { Component, PropTypes } from 'react';
 import reactMixin from 'react-mixin';
 import { ListenerMixin } from 'reflux';
-import classNames from 'classnames';
 import moment from 'moment';
 import format from 'string-format';
 import Mozaik from 'mozaik/browser';
@@ -46,7 +45,7 @@ class List extends Component {
 
     // Register format functions (!method) if any defined in config
     // NOTE: Functions needs to be converted into String to get them here
-    each(this.props.format || {}, (funk, key) => {
+    forEach(this.props.format || {}, (funk, key) => {
       extender[key] = eval(`(${funk})`);
     });
 
@@ -90,7 +89,7 @@ class List extends Component {
       // { A: { id: 'field-A1 col-A row-1', value: 'A', row: 1 }}
       flow(
         groupBy('column'),
-        each((columnEntry, key) => {
+        forEach((columnEntry, key) => {
           // Columns are unique, thus we can flatten the entry
           columnEntry = columnEntry[0];
           fieldsByColumn[key] = columnEntry.content;

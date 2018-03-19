@@ -1,6 +1,6 @@
 {
   "name": "mozaik-ext-sheets",
-  "version": "0.6.0",
+  "version": "0.7.0-dev.1",
   "description": "Mozaïk extension for listing data from Google Sheets",
   "author": "SC5",
   "license": "MIT",
@@ -36,10 +36,15 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-eslint": "^6.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.7.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-13": "^1.0.3",
     "eslint": "^3.5.0",
     "eslint-plugin-react": "^6.3.0",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
     "proxyquire": "^1.7.10",
     "react": "^0.13.3",
     "react-mixin": "3.0.4"
